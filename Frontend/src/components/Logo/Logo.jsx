@@ -3,7 +3,7 @@ import React from 'react'
 function Logo() {
   return (
     <div>
-      <img src="../../../public/DevForge.png" alt="DevForge" width={200} />
+      <img src="/DevForge.png" alt="DevForge" width={200} />
     </div>
   )
 }
