@@ -37,8 +37,8 @@ const refreshAccessToken = asyncHandler(async (req, res) => {
 
   const options = {
   httpOnly: true,
-  secure: process.env.NODE_ENV === "production",
-  sameSite: "lax",
+  secure: true,
+  sameSite: "none",
 };
 
   return res
@@ -123,8 +123,8 @@ const userLogIn = asyncHandler(async (req, res) => {
 
   const options = {
   httpOnly: true,
-  secure: process.env.NODE_ENV === "production",
-  sameSite: "lax",
+  secure: true,
+  sameSite: "none",
 };
 
   const loggedInUser = await User.findById(user._id).select(
@@ -159,8 +159,8 @@ const userLogOut = asyncHandler(async (req, res) => {
 
   const options = {
   httpOnly: true,
-  secure: process.env.NODE_ENV === "production",
-  sameSite: "lax",
+  secure: true,
+  sameSite: "none",
 };
 
   return res
