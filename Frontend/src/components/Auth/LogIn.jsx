@@ -87,11 +87,6 @@ function LogIn() {
             {localError}
           </p>
         )}
-        {error && (
-          <p className="text-sm text-red-500 text-center">
-            {error}
-          </p>
-        )}
       </div>
     </div>
   )
